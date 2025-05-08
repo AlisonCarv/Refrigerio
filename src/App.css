@@ -1,0 +1,182 @@
+/* Aluno: Álison Christian Rebouças Vidal de Carvalho - RA 2565765 */
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  background-color: #f4f7f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+.aplicacao-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.cabecalho-aplicacao {
+  text-align: center;
+  margin-bottom: 25px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #0056b3;
+}
+
+.cabecalho-aplicacao h1 {
+  color: #0038a8;
+  font-size: 2.5em;
+  margin: 0;
+}
+
+.conteudo-principal > div, 
+.conteudo-principal > section {
+  margin-bottom: 25px;
+  padding: 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  background-color: #fdfdfd;
+}
+
+.divisor {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 30px 0;
+}
+
+/* Controles de Idioma */
+.controles-idioma {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.controles-idioma label {
+  font-weight: bold;
+  color: #0038a8;
+}
+
+.controles-idioma select {
+  padding: 8px 12px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background-color: white;
+  font-size: 1em;
+}
+
+/* Formulário de Pesquisa */
+.formulario-pesquisa-container h2,
+.sugestao-leitura-container h2,
+.resultado-container h3 {
+  color: #0056b3;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.formulario-pesquisa {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+
+.campo-formulario {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 350px;
+}
+
+.campo-formulario label {
+  margin-bottom: 5px;
+  font-weight: 500;
+  color: #333;
+}
+
+.formulario-pesquisa input[type="number"],
+.formulario-pesquisa select {
+  padding: 10px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.formulario-pesquisa button {
+  padding: 10px 20px;
+  font-size: 1em;
+  background-color: #0038a8;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: auto;
+  min-width: 120px;
+}
+
+.formulario-pesquisa button:hover {
+  background-color: #002e85;
+}
+
+.formulario-pesquisa button:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+}
+
+/* Resultado e Sugestão */
+.resultado-container,
+.sugestao-leitura-container {
+  text-align: center;
+}
+
+.texto-biblico {
+  font-size: 1.2em;
+  font-style: italic;
+  color: #555;
+  margin-bottom: 8px;
+  padding: 0 10px;
+  line-height: 1.5;
+}
+
+.referencia-busca,
+.referencia-sugestao {
+  font-size: 0.95em;
+  color: #0038a8;
+  font-weight: bold;
+}
+
+/* Mensagens de Erro e Feedback */
+.mensagem-erro {
+  color: #d9534f;
+  font-size: 0.9em;
+  margin-top: 5px;
+}
+.mensagem-erro.centralizada {
+  text-align: center;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.resultado-container.erro {
+  border-left: 5px solid #d9534f;
+  background-color: #fdf7f7;
+}
+.resultado-container.erro p {
+  color: #d9534f;
+}
+
+/* Rodapé */
+.rodape {
+  text-align: center;
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid #eee;
+  font-size: 0.9em;
+  color: #777;
+}
