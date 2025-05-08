@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/AlisonCarv/Refrigerio/static/css/main.ccababb1.css",
+    "main.js": "/AlisonCarv/Refrigerio/static/js/main.f4d915d0.js",
+    "index.html": "/AlisonCarv/Refrigerio/index.html",
+    "main.ccababb1.css.map": "/AlisonCarv/Refrigerio/static/css/main.ccababb1.css.map",
+    "main.f4d915d0.js.map": "/AlisonCarv/Refrigerio/static/js/main.f4d915d0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ccababb1.css",
+    "static/js/main.f4d915d0.js"
+  ]
+}
