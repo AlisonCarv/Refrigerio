@@ -1,70 +1,175 @@
-# Getting Started with Create React App
+# Refrigério da Palavra
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Proposta do Projeto
 
-## Available Scripts
+O projeto "Refrigério da Palavra" é uma aplicação web frontend desenvolvida como parte da disciplina de Programação Web Fullstack (ES47B-ES71). O objetivo principal é construir uma Single Page Application (SPA) utilizando React.js e AJAX para consumir dados de uma API JSON pública de conteúdo bíblico.
 
-In the project directory, you can run:
+A aplicação permite aos usuários selecionar um idioma e, com base nele, uma versão da Bíblia. Em seguida, os usuários podem buscar versículos específicos informando o livro, capítulo e versículo desejados. Além disso, a aplicação apresenta uma sugestão de leitura aleatória, que é atualizada conforme o idioma/versão selecionada.
 
-### `npm start`
+Este projeto avalia a capacidade de desenvolver uma interface cliente com React.js, gerenciar o estado da aplicação, realizar requisições assíncronas para consumir e exibir dados de uma API JSON, e implementar funcionalidades específicas do React, como hooks e o uso de bibliotecas externas.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Funcionalidades Implementadas
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+*   **Seleção de Idioma e Versão:**
+    *   O usuário pode escolher entre os idiomas Português (versão Almeida) e Inglês (versão World English Bible - WEB).
+    *   A seleção do idioma define automaticamente a versão da Bíblia a ser utilizada nas buscas e sugestões.
+*   **Busca de Versículos:**
+    *   Formulário para o usuário inserir o nome do Livro, número do Capítulo e número do Versículo.
+    *   Validação de campos obrigatórios.
+    *   Exibição do texto do versículo encontrado e sua referência.
+    *   Apresentação de mensagens de erro caso a busca falhe ou o versículo não seja encontrado.
+*   **Sugestão de Leitura Aleatória:**
+    *   Ao carregar a página e sempre que o idioma/versão é alterado, uma sugestão de versículo aleatório é buscada e exibida.
+    *   Apresenta o texto do versículo e sua respectiva referência.
+*   **Interface de Página Única (SPA):**
+    *   Todas as funcionalidades são implementadas em uma única página HTML, sem redirecionamentos, com atualizações dinâmicas da interface.
 
-### `npm test`
+## Tecnologias e APIs Utilizadas
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 1. API JSON Aberta
+*   **Nome da API:** Bible API
+*   **URL Base:** `https://bible-api.com/`
+*   **Endpoints Utilizados:**
+    *   Para busca de versículos específicos (User Input): `/:livro+:capitulo::versiculo?translation=:versao`
+        *   Exemplo: `https://bible-api.com/Joao+3:16?translation=almeida`
+    *   Para sugestão de versículo aleatório (Parameterized API): `/data/:versao/random`
+        *   Exemplo: `https://bible-api.com/data/almeida/random`
+*   **Descrição:** Esta API fornece acesso a textos bíblicos em diversas traduções, permitindo buscas por referências específicas e a obtenção de versículos aleatórios.
 
-### `npm run build`
+### 2. Hook ou Funcionalidade do React.js Selecionado
+*   **Hook:** `useReducer` (em conjunto com `useContext`)
+*   **Descrição:** O hook `useReducer` é utilizado para gerenciar o estado global da aplicação de forma centralizada. Ele lida com o idioma selecionado, a versão da Bíblia, os dados da busca (livro, capítulo, versículo, texto resultante), a sugestão de leitura, e os estados de carregamento e erro das requisições à API. O `useContext` é usado para prover esse estado e a função `dispatch` para os componentes que necessitam deles.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 3. Biblioteca Externa Utilizada com React.js
+*   **Nome da Biblioteca:** React Hook Form
+*   **URL:** `https://react-hook-form.com/`
+*   **Descrição:** A biblioteca `React Hook Form` é utilizada para gerenciar o formulário de busca de versículos. Ela simplifica o processo de registro dos campos, validação (como campos obrigatórios e formato numérico para capítulo/versículo) e o tratamento da submissão do formulário, além de otimizar o desempenho ao reduzir re-renderizações desnecessárias.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Estrutura do Projeto
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+O código-fonte da aplicação está organizado da seguinte forma dentro da pasta `src/`:
 
-### `npm run eject`
+*   `src/components/`: Contém todos os componentes React escritos em JSX, responsáveis pela interface do usuário.
+*   `src/contexts/`: Contém o contexto React (`EstadoBibliaContexto.js`) utilizado para o gerenciamento de estado global com `useReducer`.
+*   `src/App.css`: Arquivo de estilos CSS global para a aplicação.
+*   `src/App.jsx`: Componente principal que estrutura a aplicação.
+*   `src/index.js`: Ponto de entrada da aplicação React.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Como Executar o Projeto Localmente
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1.  Clone este repositório:
+    ```bash
+    git clone https://github.com/AlisonCarv/Refrigerio.git
+    ```
+2.  Navegue até a pasta do projeto:
+    ```bash
+    cd Refrigerio
+    ```
+3.  Instale as dependências:
+    ```bash
+    npm install
+    ```
+    ou
+    ```bash
+    yarn install
+    ```
+4.  Inicie o servidor de desenvolvimento:
+    ```bash
+    npm start
+    ```
+    ou
+    ```bash
+    yarn start
+    ```
+A aplicação estará disponível em `http://localhost:3000`.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Aluno
+*   **Nome:** Álison Christian Rebouças Vidal de Carvalho
+*   **RA:** 2565765# Refrigério da Palavra
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Proposta do Projeto
 
-## Learn More
+O projeto "Refrigério da Palavra" é uma aplicação web frontend desenvolvida como parte da disciplina de Programação Web Fullstack (ES47B-ES71). O objetivo principal é construir uma Single Page Application (SPA) utilizando React.js e AJAX para consumir dados de uma API JSON pública de conteúdo bíblico.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+A aplicação permite aos usuários selecionar um idioma e, com base nele, uma versão da Bíblia. Em seguida, os usuários podem buscar versículos específicos informando o livro, capítulo e versículo desejados. Além disso, a aplicação apresenta uma sugestão de leitura aleatória, que é atualizada conforme o idioma/versão selecionada.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Este projeto avalia a capacidade de desenvolver uma interface cliente com React.js, gerenciar o estado da aplicação, realizar requisições assíncronas para consumir e exibir dados de uma API JSON, e implementar funcionalidades específicas do React, como hooks e o uso de bibliotecas externas.
 
-### Code Splitting
+## Funcionalidades Implementadas
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+*   **Seleção de Idioma e Versão:**
+    *   O usuário pode escolher entre os idiomas Português (versão Almeida) e Inglês (versão World English Bible - WEB).
+    *   A seleção do idioma define automaticamente a versão da Bíblia a ser utilizada nas buscas e sugestões.
+*   **Busca de Versículos:**
+    *   Formulário para o usuário inserir o nome do Livro, número do Capítulo e número do Versículo.
+    *   Validação de campos obrigatórios.
+    *   Exibição do texto do versículo encontrado e sua referência.
+    *   Apresentação de mensagens de erro caso a busca falhe ou o versículo não seja encontrado.
+*   **Sugestão de Leitura Aleatória:**
+    *   Ao carregar a página e sempre que o idioma/versão é alterado, uma sugestão de versículo aleatório é buscada e exibida.
+    *   Apresenta o texto do versículo e sua respectiva referência.
+*   **Interface de Página Única (SPA):**
+    *   Todas as funcionalidades são implementadas em uma única página HTML, sem redirecionamentos, com atualizações dinâmicas da interface.
 
-### Analyzing the Bundle Size
+## Tecnologias e APIs Utilizadas
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### 1. API JSON Aberta
+*   **Nome da API:** Bible API
+*   **URL Base:** `https://bible-api.com/`
+*   **Endpoints Utilizados:**
+    *   Para busca de versículos específicos (User Input): `/:livro+:capitulo::versiculo?translation=:versao`
+        *   Exemplo: `https://bible-api.com/Joao+3:16?translation=almeida`
+    *   Para sugestão de versículo aleatório (Parameterized API): `/data/:versao/random`
+        *   Exemplo: `https://bible-api.com/data/almeida/random`
+*   **Descrição:** Esta API fornece acesso a textos bíblicos em diversas traduções, permitindo buscas por referências específicas e a obtenção de versículos aleatórios.
 
-### Making a Progressive Web App
+### 2. Hook ou Funcionalidade do React.js Selecionado
+*   **Hook:** `useReducer` (em conjunto com `useContext`)
+*   **Descrição:** O hook `useReducer` é utilizado para gerenciar o estado global da aplicação de forma centralizada. Ele lida com o idioma selecionado, a versão da Bíblia, os dados da busca (livro, capítulo, versículo, texto resultante), a sugestão de leitura, e os estados de carregamento e erro das requisições à API. O `useContext` é usado para prover esse estado e a função `dispatch` para os componentes que necessitam deles.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### 3. Biblioteca Externa Utilizada com React.js
+*   **Nome da Biblioteca:** React Hook Form
+*   **URL:** `https://react-hook-form.com/`
+*   **Descrição:** A biblioteca `React Hook Form` é utilizada para gerenciar o formulário de busca de versículos. Ela simplifica o processo de registro dos campos, validação (como campos obrigatórios e formato numérico para capítulo/versículo) e o tratamento da submissão do formulário, além de otimizar o desempenho ao reduzir re-renderizações desnecessárias.
 
-### Advanced Configuration
+## Estrutura do Projeto
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+O código-fonte da aplicação está organizado da seguinte forma dentro da pasta `src/`:
 
-### Deployment
+*   `src/components/`: Contém todos os componentes React escritos em JSX, responsáveis pela interface do usuário.
+*   `src/contexts/`: Contém o contexto React (`EstadoBibliaContexto.js`) utilizado para o gerenciamento de estado global com `useReducer`.
+*   `src/App.css`: Arquivo de estilos CSS global para a aplicação.
+*   `src/App.jsx`: Componente principal que estrutura a aplicação.
+*   `src/index.js`: Ponto de entrada da aplicação React.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Como Executar o Projeto Localmente
 
-### `npm run build` fails to minify
+1.  Clone este repositório:
+    ```bash
+    git clone https://github.com/AlisonCarv/Refrigerio.git
+    ```
+2.  Navegue até a pasta do projeto:
+    ```bash
+    cd Refrigerio
+    ```
+3.  Instale as dependências:
+    ```bash
+    npm install
+    ```
+    ou
+    ```bash
+    yarn install
+    ```
+4.  Inicie o servidor de desenvolvimento:
+    ```bash
+    npm start
+    ```
+    ou
+    ```bash
+    yarn start
+    ```
+A aplicação estará disponível em `http://localhost:3000`.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Aluno
+*   **Nome:** Álison Christian Rebouças Vidal de Carvalho
+*   **RA:** 2565765
