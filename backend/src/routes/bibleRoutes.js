@@ -74,7 +74,7 @@ router.get('/favorites', protect, async (req, res) => {
   }
 });
 
-// Rota DELETE para /api/favorites (NOVA)
+// Rota DELETE para /api/favorites
 router.delete('/favorites', protect, async (req, res) => {
   const { reference } = req.body;
   const user_id = req.user.id;

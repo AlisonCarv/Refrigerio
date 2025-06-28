@@ -72,9 +72,7 @@ body {
 }
 
 .area-logada button {
-  background-color: #d9534f; /* Cor vermelha para sair */
-}
-
+  background-color: #d9534f;
 .area-login button:hover, .area-logada button:hover {
   background-color: #002e85;
 }
@@ -114,7 +112,7 @@ body {
 
 /* Formulário de Pesquisa */
 .formulario-pesquisa-container {
-  margin-bottom: 30px; /* Espaçamento entre o formulário e o resultado */
+  margin-bottom: 30px;
 }
 
 .formulario-pesquisa-container h2,
@@ -288,10 +286,10 @@ body {
   padding: 20px;
   margin-bottom: 15px;
   text-align: center;
-  position: relative; /* Para posicionar o botão de remover */
+  position: relative;
 }
 
-/* BOTÃO DE REMOVER FAVORITO (NOVO) */
+/* BOTÃO DE REMOVER FAVORITO */
 .botao-remover-favorito {
   position: absolute;
   top: 5px;
@@ -307,7 +305,6 @@ body {
 .botao-remover-favorito:hover {
   color: #d9534f; /* Vermelho ao passar o mouse */
 }
-/* FIM BOTÃO REMOVER */
 
 /* Estilos para estado favoritado */
 .controles-navegacao-container button.favoritado,

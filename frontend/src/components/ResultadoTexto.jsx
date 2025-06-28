@@ -1,7 +1,7 @@
 // Aluno: Álison Christian Rebouças Vidal de Carvalho - RA 2565765
 import React, { useContext } from 'react';
 import { EstadoBibliaContexto } from '../contexts/EstadoBibliaContexto';
-import ControlesNavegacao from './ControlesNavegacao'; // Vamos criar
+import ControlesNavegacao from './ControlesNavegacao';
 
 function ResultadoTexto() {
   const { estado } = useContext(EstadoBibliaContexto);
