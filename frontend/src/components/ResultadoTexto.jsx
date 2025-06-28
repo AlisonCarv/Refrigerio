@@ -1,7 +1,7 @@
 // Aluno: Álison Christian Rebouças Vidal de Carvalho - RA 2565765
-
 import React, { useContext } from 'react';
 import { EstadoBibliaContexto } from '../contexts/EstadoBibliaContexto';
+import ControlesNavegacao from './ControlesNavegacao'; // Vamos criar
 
 function ResultadoTexto() {
   const { estado } = useContext(EstadoBibliaContexto);
@@ -32,6 +32,7 @@ function ResultadoTexto() {
       <h3>Resultado da Busca:</h3>
       <p className="texto-biblico">"{estado.textoResultado.text}"</p>
       <p className="referencia-busca">({estado.textoResultado.reference})</p>
+      <ControlesNavegacao /> {/* Botões de ação para o versículo atual */}
     </div>
   );
 }

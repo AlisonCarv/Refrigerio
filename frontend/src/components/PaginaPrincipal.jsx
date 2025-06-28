@@ -1,14 +1,12 @@
 // Aluno: Álison Christian Rebouças Vidal de Carvalho - RA 2565765
-
 import React from 'react';
-
-// O App.jsx é quem monta a página.
 
 function PaginaPrincipal() {
   return (
-    <header className="cabecalho-aplicacao">
+    // Mudança de <header> para <div> para melhor semântica HTML
+    <div className="titulo-container"> 
       <h1>Refrigério da Palavra</h1>
-    </header>
+    </div>
   );
 }
 

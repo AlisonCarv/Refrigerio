@@ -1,6 +1,4 @@
 // Aluno: Álison Christian Rebouças Vidal de Carvalho - RA 2565765
-
-// Biblioteca externa utilizada: react-hook-form
 import React, { useContext } from 'react';
 import { useForm } from 'react-hook-form';
 import { EstadoBibliaContexto } from '../contexts/EstadoBibliaContexto';
@@ -9,62 +7,67 @@ function FormularioPesquisa() {
   const { estado, despachar } = useContext(EstadoBibliaContexto);
   const { register, handleSubmit, formState: { errors }, reset } = useForm();
 
-  const onSubmit = async (data) => {
-    despachar({ type: 'ERRO_BUSCA', payload: '' });
-    despachar({ type: 'DEFINIR_RESULTADO', payload: null });
-
-    const livroFormatado = data.livro.trim().replace(/\s+/g, '+');
-    const capituloFormatado = data.capitulo.trim();
-    const versiculoFormatado = data.versiculo.trim();
-
-    const url = `https://bible-api.com/${livroFormatado}+${capituloFormatado}:${versiculoFormatado}?translation=${estado.versao}`;
-
+  // Função reutilizável para buscar um versículo, usada tanto pelo formulário quanto pela navegação
+  const buscarVersiculo = async (busca) => {
     despachar({ type: 'CARREGANDO_BUSCA', payload: true });
+    despachar({ type: 'ERRO_BUSCA', payload: '' });
+    
     try {
-      const resposta = await fetch(url);
+      const resposta = await fetch('/api/verse/search', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          book: busca.livro,
+          chapter: busca.capitulo,
+          verse: busca.versiculo,
+          version: estado.versao,
+        }),
+      });
+
       const dadosApi = await resposta.json();
-
-      if (dadosApi.error) {
-        throw new Error(dadosApi.error);
+      if (!resposta.ok) {
+        throw new Error(dadosApi.message || 'Erro na busca.');
       }
-
-      let textoEncontrado = null;
-      let referenciaDaApi = dadosApi.reference || `${data.livro} ${data.capitulo}:${data.versiculo}`;
-      let livroDaApi = data.livro;
-      let capituloDaApi = data.capitulo;
-      let versiculoDaApi = data.versiculo;
-
-
-      if (dadosApi.verses && dadosApi.verses.length > 0 && typeof dadosApi.verses[0].text === 'string') {
-        textoEncontrado = dadosApi.verses[0].text.trim();
-        livroDaApi = dadosApi.verses[0].book_name || livroDaApi;
-        capituloDaApi = (dadosApi.verses[0].chapter || capituloDaApi).toString();
-        versiculoDaApi = (dadosApi.verses[0].verse || versiculoDaApi).toString();
-      } else if (typeof dadosApi.text === 'string' && dadosApi.text.trim() !== '') {
-        textoEncontrado = dadosApi.text.trim();
-      }
-
-
-      if (textoEncontrado) {
-        despachar({
-          type: 'DEFINIR_RESULTADO',
-          payload: {
-            text: textoEncontrado,
-            reference: referenciaDaApi,
-            livro: livroDaApi,
-            capitulo: capituloDaApi,
-            versiculo: versiculoDaApi,
+      
+      // Adiciona a referência da busca atual ao payload para o contexto
+      const payloadCompleto = {
+        ...dadosApi,
+        navigation: {
+          ...dadosApi.navigation,
+          current: {
+            book: busca.livro,
+            chapter: busca.capitulo,
+            verse: busca.versiculo,
           },
-        });
-        reset();
-      } else {
-        console.warn("API não retornou texto no formato esperado, ou versículo não existe:", dadosApi);
-        despachar({ type: 'ERRO_BUSCA', payload: 'Versículo não encontrado ou resposta inesperada da API. Verifique os dados digitados (ex: João 3:16).' });
-      }
+        },
+      };
+
+      despachar({ type: 'DEFINIR_RESULTADO', payload: payloadCompleto });
     } catch (erro) {
-      console.error("Erro no bloco catch ao buscar versículo:", erro);
-      despachar({ type: 'ERRO_BUSCA', payload: `Erro: ${erro.message}. Verifique os dados e tente novamente.` });
+      console.error("Erro ao buscar versículo:", erro);
+      
+      let mensagemAmigavel = 'Não foi possível encontrar o versículo. Verifique se o nome do livro, capítulo e versículo estão corretos.';
+      
+      // Personaliza a mensagem se o erro veio da API
+      if (erro.message && erro.message.toLowerCase().includes('not found')) {
+        mensagemAmigavel = `A referência "${busca.livro} ${busca.capitulo}:${busca.versiculo}" não foi encontrada. Por favor, verifique a digitação.`;
+      } else if (erro.message) {
+        mensagemAmigavel = `Erro: ${erro.message}`;
+      }
+      
+      despachar({ type: 'ERRO_BUSCA', payload: mensagemAmigavel });
     }
+  };
+
+  const onSubmit = (data) => {
+    buscarVersiculo({
+      livro: data.livro,
+      capitulo: data.capitulo,
+      versiculo: data.versiculo,
+    });
+    reset(); // Limpa os campos do formulário após a busca
   };
 
   return (

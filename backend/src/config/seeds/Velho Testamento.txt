@@ -1,0 +1,1084 @@
+Gênesis (GEN)
+Capítulos: 50
+Versículos por capítulo:
+Capítulo 1: 31
+Capítulo 2: 25
+Capítulo 3: 24
+Capítulo 4: 26
+Capítulo 5: 32
+Capítulo 6: 22
+Capítulo 7: 24
+Capítulo 8: 22
+Capítulo 9: 29
+Capítulo 10: 32
+Capítulo 11: 32
+Capítulo 12: 20
+Capítulo 13: 18
+Capítulo 14: 24
+Capítulo 15: 21
+Capítulo 16: 16
+Capítulo 17: 27
+Capítulo 18: 33
+Capítulo 19: 38
+Capítulo 20: 18
+Capítulo 21: 34
+Capítulo 22: 24
+Capítulo 23: 20
+Capítulo 24: 67
+Capítulo 25: 34
+Capítulo 26: 35
+Capítulo 27: 46
+Capítulo 28: 22
+Capítulo 29: 35
+Capítulo 30: 43
+Capítulo 31: 55
+Capítulo 32: 32
+Capítulo 33: 20
+Capítulo 34: 31
+Capítulo 35: 29
+Capítulo 36: 43
+Capítulo 37: 36
+Capítulo 38: 30
+Capítulo 39: 23
+Capítulo 40: 23
+Capítulo 41: 57
+Capítulo 42: 38
+Capítulo 43: 34
+Capítulo 44: 34
+Capítulo 45: 28
+Capítulo 46: 34
+Capítulo 47: 31
+Capítulo 48: 22
+Capítulo 49: 33
+Capítulo 50: 26
+
+Êxodo (EXO)
+Capítulos: 40
+Versículos por capítulo:
+Capítulo 1: 22
+Capítulo 2: 25
+Capítulo 3: 22
+Capítulo 4: 31
+Capítulo 5: 23
+Capítulo 6: 30
+Capítulo 7: 25
+Capítulo 8: 32
+Capítulo 9: 35
+Capítulo 10: 29
+Capítulo 11: 10
+Capítulo 12: 51
+Capítulo 13: 22
+Capítulo 14: 31
+Capítulo 15: 27
+Capítulo 16: 36
+Capítulo 17: 16
+Capítulo 18: 27
+Capítulo 19: 25
+Capítulo 20: 26
+Capítulo 21: 36
+Capítulo 22: 31
+Capítulo 23: 33
+Capítulo 24: 18
+Capítulo 25: 40
+Capítulo 26: 37
+Capítulo 27: 21
+Capítulo 28: 43
+Capítulo 29: 46
+Capítulo 30: 38
+Capítulo 31: 18
+Capítulo 32: 35
+Capítulo 33: 23
+Capítulo 34: 35
+Capítulo 35: 35
+Capítulo 36: 38
+Capítulo 37: 29
+Capítulo 38: 31
+Capítulo 39: 43
+Capítulo 40: 38
+
+Levítico (LEV)
+Capítulos: 27
+Versículos por capítulo:
+Capítulo 1: 17
+Capítulo 2: 16
+Capítulo 3: 17
+Capítulo 4: 35
+Capítulo 5: 19
+Capítulo 6: 30
+Capítulo 7: 38
+Capítulo 8: 36
+Capítulo 9: 24
+Capítulo 10: 20
+Capítulo 11: 47
+Capítulo 12: 8
+Capítulo 13: 59
+Capítulo 14: 57
+Capítulo 15: 33
+Capítulo 16: 34
+Capítulo 17: 16
+Capítulo 18: 30
+Capítulo 19: 37
+Capítulo 20: 27
+Capítulo 21: 24
+Capítulo 22: 33
+Capítulo 23: 44
+Capítulo 24: 23
+Capítulo 25: 55
+Capítulo 26: 46
+Capítulo 27: 34
+
+Números (NUM)
+Capítulos: 36
+Versículos por capítulo:
+Capítulo 1: 54
+Capítulo 2: 34
+Capítulo 3: 51
+Capítulo 4: 49
+Capítulo 5: 31
+Capítulo 6: 27
+Capítulo 7: 89
+Capítulo 8: 26
+Capítulo 9: 23
+Capítulo 10: 36
+Capítulo 11: 35
+Capítulo 12: 16
+Capítulo 13: 33
+Capítulo 14: 45
+Capítulo 15: 41
+Capítulo 16: 50
+Capítulo 17: 13
+Capítulo 18: 32
+Capítulo 19: 22
+Capítulo 20: 29
+Capítulo 21: 35
+Capítulo 22: 41
+Capítulo 23: 30
+Capítulo 24: 25
+Capítulo 25: 18
+Capítulo 26: 65
+Capítulo 27: 23
+Capítulo 28: 31
+Capítulo 29: 40
+Capítulo 30: 16
+Capítulo 31: 54
+Capítulo 32: 42
+Capítulo 33: 56
+Capítulo 34: 29
+Capítulo 35: 34
+Capítulo 36: 13
+
+Deuteronômio (DEU)
+Capítulos: 34
+Versículos por capítulo:
+Capítulo 1: 46
+Capítulo 2: 37
+Capítulo 3: 29
+Capítulo 4: 49
+Capítulo 5: 33
+Capítulo 6: 25
+Capítulo 7: 26
+Capítulo 8: 20
+Capítulo 9: 29
+Capítulo 10: 22
+Capítulo 11: 32
+Capítulo 12: 32
+Capítulo 13: 18
+Capítulo 14: 29
+Capítulo 15: 23
+Capítulo 16: 22
+Capítulo 17: 20
+Capítulo 18: 22
+Capítulo 19: 21
+Capítulo 20: 20
+Capítulo 21: 23
+Capítulo 22: 30
+Capítulo 23: 25
+Capítulo 24: 22
+Capítulo 25: 19
+Capítulo 26: 19
+Capítulo 27: 26
+Capítulo 28: 68
+Capítulo 29: 29
+Capítulo 30: 20
+Capítulo 31: 30
+Capítulo 32: 52
+Capítulo 33: 29
+Capítulo 34: 12
+
+Josué (JOS)
+Capítulos: 24
+Versículos por capítulo:
+Capítulo 1: 18
+Capítulo 2: 24
+Capítulo 3: 17
+Capítulo 4: 24
+Capítulo 5: 15
+Capítulo 6: 27
+Capítulo 7: 26
+Capítulo 8: 35
+Capítulo 9: 27
+Capítulo 10: 43
+Capítulo 11: 23
+Capítulo 12: 24
+Capítulo 13: 33
+Capítulo 14: 15
+Capítulo 15: 63
+Capítulo 16: 10
+Capítulo 17: 18
+Capítulo 18: 28
+Capítulo 19: 51
+Capítulo 20: 9
+Capítulo 21: 45
+Capítulo 22: 34
+Capítulo 23: 16
+Capítulo 24: 33
+
+Juízes (JDG)
+Capítulos: 21
+Versículos por capítulo:
+Capítulo 1: 36
+Capítulo 2: 23
+Capítulo 3: 31
+Capítulo 4: 24
+Capítulo 5: 31
+Capítulo 6: 40
+Capítulo 7: 25
+Capítulo 8: 35
+Capítulo 9: 57
+Capítulo 10: 18
+Capítulo 11: 40
+Capítulo 12: 15
+Capítulo 13: 25
+Capítulo 14: 20
+Capítulo 15: 20
+Capítulo 16: 31
+Capítulo 17: 13
+Capítulo 18: 31
+Capítulo 19: 30
+Capítulo 20: 48
+Capítulo 21: 25
+
+Rute (RUT)
+Capítulos: 4
+Versículos por capítulo:
+Capítulo 1: 22
+Capítulo 2: 23
+Capítulo 3: 18
+Capítulo 4: 22
+
+1 Samuel (1SA)
+Capítulos: 31
+Versículos por capítulo:
+Capítulo 1: 28
+Capítulo 2: 36
+Capítulo 3: 21
+Capítulo 4: 22
+Capítulo 5: 12
+Capítulo 6: 21
+Capítulo 7: 17
+Capítulo 8: 22
+Capítulo 9: 27
+Capítulo 10: 27
+Capítulo 11: 15
+Capítulo 12: 25
+Capítulo 13: 23
+Capítulo 14: 52
+Capítulo 15: 35
+Capítulo 16: 23
+Capítulo 17: 58
+Capítulo 18: 30
+Capítulo 19: 24
+Capítulo 20: 42
+Capítulo 21: 15
+Capítulo 22: 23
+Capítulo 23: 29
+Capítulo 24: 22
+Capítulo 25: 44
+Capítulo 26: 25
+Capítulo 27: 12
+Capítulo 28: 25
+Capítulo 29: 11
+Capítulo 30: 31
+Capítulo 31: 13
+
+2 Samuel (2SA)
+Capítulos: 24
+Versículos por capítulo:
+Capítulo 1: 27
+Capítulo 2: 32
+Capítulo 3: 39
+Capítulo 4: 12
+Capítulo 5: 25
+Capítulo 6: 23
+Capítulo 7: 29
+Capítulo 8: 18
+Capítulo 9: 13
+Capítulo 10: 19
+Capítulo 11: 27
+Capítulo 12: 31
+Capítulo 13: 39
+Capítulo 14: 33
+Capítulo 15: 37
+Capítulo 16: 14
+Capítulo 17: 29
+Capítulo 18: 33
+Capítulo 19: 43
+Capítulo 20: 26
+Capítulo 21: 22
+Capítulo 22: 51
+Capítulo 23: 39
+Capítulo 24: 25
+
+1 Reis (1KI)
+Capítulos: 22
+Versículos por capítulo:
+Capítulo 1: 53
+Capítulo 2: 46
+Capítulo 3: 28
+Capítulo 4: 34
+Capítulo 5: 18
+Capítulo 6: 38
+Capítulo 7: 51
+Capítulo 8: 66
+Capítulo 9: 28
+Capítulo 10: 29
+Capítulo 11: 43
+Capítulo 12: 33
+Capítulo 13: 34
+Capítulo 14: 31
+Capítulo 15: 34
+Capítulo 16: 34
+Capítulo 17: 24
+Capítulo 18: 46
+Capítulo 19: 21
+Capítulo 20: 43
+Capítulo 21: 29
+Capítulo 22: 53
+
+2 Reis (2KI)
+Capítulos: 25
+Versículos por capítulo:
+Capítulo 1: 18
+Capítulo 2: 25
+Capítulo 3: 27
+Capítulo 4: 44
+Capítulo 5: 27
+Capítulo 6: 33
+Capítulo 7: 20
+Capítulo 8: 29
+Capítulo 9: 37
+Capítulo 10: 36
+Capítulo 11: 21
+Capítulo 12: 21
+Capítulo 13: 25
+Capítulo 14: 29
+Capítulo 15: 38
+Capítulo 16: 20
+Capítulo 17: 41
+Capítulo 18: 37
+Capítulo 19: 37
+Capítulo 20: 21
+Capítulo 21: 26
+Capítulo 22: 20
+Capítulo 23: 37
+Capítulo 24: 20
+Capítulo 25: 30
+
+1 Crônicas (1CH)
+Capítulos: 29
+Versículos por capítulo:
+Capítulo 1: 54
+Capítulo 2: 55
+Capítulo 3: 24
+Capítulo 4: 43
+Capítulo 5: 26
+Capítulo 6: 81
+Capítulo 7: 40
+Capítulo 8: 40
+Capítulo 9: 44
+Capítulo 10: 14
+Capítulo 11: 47
+Capítulo 12: 40
+Capítulo 13: 14
+Capítulo 14: 17
+Capítulo 15: 29
+Capítulo 16: 43
+Capítulo 17: 27
+Capítulo 18: 17
+Capítulo 19: 19
+Capítulo 20: 8
+Capítulo 21: 30
+Capítulo 22: 19
+Capítulo 23: 32
+Capítulo 24: 31
+Capítulo 25: 31
+Capítulo 26: 32
+Capítulo 27: 34
+Capítulo 28: 21
+Capítulo 29: 30
+
+2 Crônicas (2CH)
+Capítulos: 36
+Versículos por capítulo:
+Capítulo 1: 17
+Capítulo 2: 18
+Capítulo 3: 17
+Capítulo 4: 22
+Capítulo 5: 14
+Capítulo 6: 42
+Capítulo 7: 22
+Capítulo 8: 18
+Capítulo 9: 31
+Capítulo 10: 19
+Capítulo 11: 23
+Capítulo 12: 16
+Capítulo 13: 22
+Capítulo 14: 15
+Capítulo 15: 19
+Capítulo 16: 14
+Capítulo 17: 19
+Capítulo 18: 34
+Capítulo 19: 11
+Capítulo 20: 37
+Capítulo 21: 20
+Capítulo 22: 12
+Capítulo 23: 21
+Capítulo 24: 27
+Capítulo 25: 28
+Capítulo 26: 23
+Capítulo 27: 9
+Capítulo 28: 27
+Capítulo 29: 36
+Capítulo 30: 27
+Capítulo 31: 21
+Capítulo 32: 33
+Capítulo 33: 25
+Capítulo 34: 33
+Capítulo 35: 27
+Capítulo 36: 23
+
+Esdras (EZR)
+Capítulos: 10
+Versículos por capítulo:
+Capítulo 1: 11
+Capítulo 2: 70
+Capítulo 3: 13
+Capítulo 4: 24
+Capítulo 5: 17
+Capítulo 6: 22
+Capítulo 7: 28
+Capítulo 8: 36
+Capítulo 9: 15
+Capítulo 10: 44
+
+Neemias (NEH)
+Capítulos: 13
+Versículos por capítulo:
+Capítulo 1: 11
+Capítulo 2: 20
+Capítulo 3: 32
+Capítulo 4: 23
+Capítulo 5: 19
+Capítulo 6: 19
+Capítulo 7: 73
+Capítulo 8: 18
+Capítulo 9: 38
+Capítulo 10: 39
+Capítulo 11: 36
+Capítulo 12: 47
+Capítulo 13: 31
+
+Ester (EST)
+Capítulos: 10
+Versículos por capítulo:
+Capítulo 1: 22
+Capítulo 2: 23
+Capítulo 3: 15
+Capítulo 4: 17
+Capítulo 5: 14
+Capítulo 6: 14
+Capítulo 7: 10
+Capítulo 8: 17
+Capítulo 9: 32
+Capítulo 10: 3
+
+Jó (JOB)
+Capítulos: 42
+Versículos por capítulo:
+Capítulo 1: 22
+Capítulo 2: 13
+Capítulo 3: 26
+Capítulo 4: 21
+Capítulo 5: 27
+Capítulo 6: 30
+Capítulo 7: 21
+Capítulo 8: 22
+Capítulo 9: 35
+Capítulo 10: 22
+Capítulo 11: 20
+Capítulo 12: 25
+Capítulo 13: 28
+Capítulo 14: 22
+Capítulo 15: 35
+Capítulo 16: 22
+Capítulo 17: 16
+Capítulo 18: 21
+Capítulo 19: 29
+Capítulo 20: 29
+Capítulo 21: 34
+Capítulo 22: 30
+Capítulo 23: 17
+Capítulo 24: 25
+Capítulo 25: 6
+Capítulo 26: 14
+Capítulo 27: 23
+Capítulo 28: 28
+Capítulo 29: 25
+Capítulo 30: 31
+Capítulo 31: 40
+Capítulo 32: 22
+Capítulo 33: 33
+Capítulo 34: 37
+Capítulo 35: 16
+Capítulo 36: 33
+Capítulo 37: 24
+Capítulo 38: 41
+Capítulo 39: 30
+Capítulo 40: 24
+Capítulo 41: 34
+Capítulo 42: 17
+
+Salmos (PSA)
+Capítulos: 150
+Versículos por capítulo:
+Capítulo 1: 6
+Capítulo 2: 12
+Capítulo 3: 8
+Capítulo 4: 8
+Capítulo 5: 12
+Capítulo 6: 10
+Capítulo 7: 17
+Capítulo 8: 9
+Capítulo 9: 20
+Capítulo 10: 18
+Capítulo 11: 7
+Capítulo 12: 8
+Capítulo 13: 6
+Capítulo 14: 7
+Capítulo 15: 5
+Capítulo 16: 11
+Capítulo 17: 15
+Capítulo 18: 50
+Capítulo 19: 14
+Capítulo 20: 9
+Capítulo 21: 13
+Capítulo 22: 31
+Capítulo 23: 6
+Capítulo 24: 10
+Capítulo 25: 22
+Capítulo 26: 12
+Capítulo 27: 14
+Capítulo 28: 9
+Capítulo 29: 11
+Capítulo 30: 12
+Capítulo 31: 24
+Capítulo 32: 11
+Capítulo 33: 22
+Capítulo 34: 22
+Capítulo 35: 28
+Capítulo 36: 12
+Capítulo 37: 40
+Capítulo 38: 22
+Capítulo 39: 13
+Capítulo 40: 17
+Capítulo 41: 13
+Capítulo 42: 11
+Capítulo 43: 5
+Capítulo 44: 26
+Capítulo 45: 17
+Capítulo 46: 11
+Capítulo 47: 9
+Capítulo 48: 14
+Capítulo 49: 20
+Capítulo 50: 23
+Capítulo 51: 19
+Capítulo 52: 9
+Capítulo 53: 6
+Capítulo 54: 7
+Capítulo 55: 23
+Capítulo 56: 13
+Capítulo 57: 11
+Capítulo 58: 11
+Capítulo 59: 17
+Capítulo 60: 12
+Capítulo 61: 8
+Capítulo 62: 12
+Capítulo 63: 11
+Capítulo 64: 10
+Capítulo 65: 13
+Capítulo 66: 20
+Capítulo 67: 7
+Capítulo 68: 35
+Capítulo 69: 36
+Capítulo 70: 5
+Capítulo 71: 24
+Capítulo 72: 20
+Capítulo 73: 28
+Capítulo 74: 23
+Capítulo 75: 10
+Capítulo 76: 12
+Capítulo 77: 20
+Capítulo 78: 72
+Capítulo 79: 13
+Capítulo 80: 19
+Capítulo 81: 16
+Capítulo 82: 8
+Capítulo 83: 18
+Capítulo 84: 12
+Capítulo 85: 13
+Capítulo 86: 17
+Capítulo 87: 7
+Capítulo 88: 18
+Capítulo 89: 52
+Capítulo 90: 17
+Capítulo 91: 16
+Capítulo 92: 15
+Capítulo 93: 5
+Capítulo 94: 23
+Capítulo 95: 11
+Capítulo 96: 13
+Capítulo 97: 12
+Capítulo 98: 9
+Capítulo 99: 9
+Capítulo 100: 5
+Capítulo 101: 8
+Capítulo 102: 28
+Capítulo 103: 22
+Capítulo 104: 35
+Capítulo 105: 45
+Capítulo 106: 48
+Capítulo 107: 43
+Capítulo 108: 13
+Capítulo 109: 31
+Capítulo 110: 7
+Capítulo 111: 10
+Capítulo 112: 10
+Capítulo 113: 9
+Capítulo 114: 8
+Capítulo 115: 18
+Capítulo 116: 19
+Capítulo 117: 2
+Capítulo 118: 29
+Capítulo 119: 176
+Capítulo 120: 7
+Capítulo 121: 8
+Capítulo 122: 9
+Capítulo 123: 4
+Capítulo 124: 8
+Capítulo 125: 5
+Capítulo 126: 6
+Capítulo 127: 5
+Capítulo 128: 6
+Capítulo 129: 8
+Capítulo 130: 8
+Capítulo 131: 3
+Capítulo 132: 18
+Capítulo 133: 3
+Capítulo 134: 3
+Capítulo 135: 21
+Capítulo 136: 26
+Capítulo 137: 9
+Capítulo 138: 8
+Capítulo 139: 24
+Capítulo 140: 13
+Capítulo 141: 10
+Capítulo 142: 7
+Capítulo 143: 12
+Capítulo 144: 15
+Capítulo 145: 21
+Capítulo 146: 10
+Capítulo 147: 20
+Capítulo 148: 14
+Capítulo 149: 9
+Capítulo 150: 6
+
+Provérbios (PRO)
+Capítulos: 31
+Versículos por capítulo:
+Capítulo 1: 33
+Capítulo 2: 22
+Capítulo 3: 35
+Capítulo 4: 27
+Capítulo 5: 23
+Capítulo 6: 35
+Capítulo 7: 27
+Capítulo 8: 36
+Capítulo 9: 18
+Capítulo 10: 32
+Capítulo 11: 31
+Capítulo 12: 28
+Capítulo 13: 25
+Capítulo 14: 35
+Capítulo 15: 33
+Capítulo 16: 33
+Capítulo 17: 28
+Capítulo 18: 24
+Capítulo 19: 29
+Capítulo 20: 30
+Capítulo 21: 31
+Capítulo 22: 29
+Capítulo 23: 35
+Capítulo 24: 34
+Capítulo 25: 28
+Capítulo 26: 28
+Capítulo 27: 27
+Capítulo 28: 28
+Capítulo 29: 27
+Capítulo 30: 33
+Capítulo 31: 31
+
+Eclesiastes (ECC)
+Capítulos: 12
+Versículos por capítulo:
+Capítulo 1: 18
+Capítulo 2: 26
+Capítulo 3: 22
+Capítulo 4: 16
+Capítulo 5: 20
+Capítulo 6: 12
+Capítulo 7: 29
+Capítulo 8: 17
+Capítulo 9: 18
+Capítulo 10: 20
+Capítulo 11: 10
+Capítulo 12: 14
+
+Cânticos (SNG)
+Capítulos: 8
+Versículos por capítulo:
+Capítulo 1: 17
+Capítulo 2: 17
+Capítulo 3: 11
+Capítulo 4: 16
+Capítulo 5: 16
+Capítulo 6: 13
+Capítulo 7: 13
+Capítulo 8: 14
+
+Isaías (ISA)
+Capítulos: 66
+Versículos por capítulo:
+Capítulo 1: 31
+Capítulo 2: 22
+Capítulo 3: 26
+Capítulo 4: 6
+Capítulo 5: 30
+Capítulo 6: 13
+Capítulo 7: 25
+Capítulo 8: 22
+Capítulo 9: 21
+Capítulo 10: 34
+Capítulo 11: 16
+Capítulo 12: 6
+Capítulo 13: 22
+Capítulo 14: 32
+Capítulo 15: 9
+Capítulo 16: 14
+Capítulo 17: 14
+Capítulo 18: 7
+Capítulo 19: 25
+Capítulo 20: 6
+Capítulo 21: 17
+Capítulo 22: 25
+Capítulo 23: 18
+Capítulo 24: 23
+Capítulo 25: 12
+Capítulo 26: 21
+Capítulo 27: 13
+Capítulo 28: 29
+Capítulo 29: 24
+Capítulo 30: 33
+Capítulo 31: 9
+Capítulo 32: 20
+Capítulo 33: 24
+Capítulo 34: 17
+Capítulo 35: 10
+Capítulo 36: 22
+Capítulo 37: 38
+Capítulo 38: 22
+Capítulo 39: 8
+Capítulo 40: 31
+Capítulo 41: 29
+Capítulo 42: 25
+Capítulo 43: 28
+Capítulo 44: 28
+Capítulo 45: 25
+Capítulo 46: 13
+Capítulo 47: 15
+Capítulo 48: 22
+Capítulo 49: 26
+Capítulo 50: 11
+Capítulo 51: 23
+Capítulo 52: 15
+Capítulo 53: 12
+Capítulo 54: 17
+Capítulo 55: 13
+Capítulo 56: 12
+Capítulo 57: 21
+Capítulo 58: 14
+Capítulo 59: 21
+Capítulo 60: 22
+Capítulo 61: 11
+Capítulo 62: 12
+Capítulo 63: 19
+Capítulo 64: 12
+Capítulo 65: 25
+Capítulo 66: 24
+
+Jeremias (JER)
+Capítulos: 52
+Versículos por capítulo:
+Capítulo 1: 19
+Capítulo 2: 37
+Capítulo 3: 25
+Capítulo 4: 31
+Capítulo 5: 31
+Capítulo 6: 30
+Capítulo 7: 34
+Capítulo 8: 22
+Capítulo 9: 26
+Capítulo 10: 25
+Capítulo 11: 23
+Capítulo 12: 17
+Capítulo 13: 27
+Capítulo 14: 22
+Capítulo 15: 21
+Capítulo 16: 21
+Capítulo 17: 27
+Capítulo 18: 23
+Capítulo 19: 15
+Capítulo 20: 18
+Capítulo 21: 14
+Capítulo 22: 30
+Capítulo 23: 40
+Capítulo 24: 10
+Capítulo 25: 38
+Capítulo 26: 24
+Capítulo 27: 22
+Capítulo 28: 17
+Capítulo 29: 32
+Capítulo 30: 24
+Capítulo 31: 40
+Capítulo 32: 44
+Capítulo 33: 26
+Capítulo 34: 22
+Capítulo 35: 19
+Capítulo 36: 32
+Capítulo 37: 21
+Capítulo 38: 28
+Capítulo 39: 18
+Capítulo 40: 16
+Capítulo 41: 18
+Capítulo 42: 22
+Capítulo 43: 13
+Capítulo 44: 30
+Capítulo 45: 5
+Capítulo 46: 28
+Capítulo 47: 7
+Capítulo 48: 47
+Capítulo 49: 39
+Capítulo 50: 46
+Capítulo 51: 64
+Capítulo 52: 34
+
+Lamentações (LAM)
+Capítulos: 5
+Versículos por capítulo:
+Capítulo 1: 22
+Capítulo 2: 22
+Capítulo 3: 66
+Capítulo 4: 22
+Capítulo 5: 22
+
+Ezequiel (EZK)
+Capítulos: 48
+Versículos por capítulo:
+Capítulo 1: 28
+Capítulo 2: 10
+Capítulo 3: 27
+Capítulo 4: 17
+Capítulo 5: 17
+Capítulo 6: 14
+Capítulo 7: 27
+Capítulo 8: 18
+Capítulo 9: 11
+Capítulo 10: 22
+Capítulo 11: 25
+Capítulo 12: 28
+Capítulo 13: 23
+Capítulo 14: 23
+Capítulo 15: 8
+Capítulo 16: 63
+Capítulo 17: 24
+Capítulo 18: 32
+Capítulo 19: 14
+Capítulo 20: 49
+Capítulo 21: 32
+Capítulo 22: 31
+Capítulo 23: 49
+Capítulo 24: 27
+Capítulo 25: 17
+Capítulo 26: 21
+Capítulo 27: 36
+Capítulo 28: 26
+Capítulo 29: 21
+Capítulo 30: 26
+Capítulo 31: 18
+Capítulo 32: 32
+Capítulo 33: 33
+Capítulo 34: 31
+Capítulo 35: 15
+Capítulo 36: 38
+Capítulo 37: 28
+Capítulo 38: 23
+Capítulo 39: 29
+Capítulo 40: 49
+Capítulo 41: 26
+Capítulo 42: 20
+Capítulo 43: 27
+Capítulo 44: 31
+Capítulo 45: 25
+Capítulo 46: 24
+Capítulo 47: 23
+Capítulo 48: 35
+
+Daniel (DAN)
+Capítulos: 12
+Versículos por capítulo:
+Capítulo 1: 21
+Capítulo 2: 49
+Capítulo 3: 30
+Capítulo 4: 37
+Capítulo 5: 31
+Capítulo 6: 28
+Capítulo 7: 28
+Capítulo 8: 27
+Capítulo 9: 27
+Capítulo 10: 21
+Capítulo 11: 45
+Capítulo 12: 13
+
+Oséias (HOS)
+Capítulos: 14
+Versículos por capítulo:
+Capítulo 1: 11
+Capítulo 2: 23
+Capítulo 3: 5
+Capítulo 4: 19
+Capítulo 5: 15
+Capítulo 6: 11
+Capítulo 7: 16
+Capítulo 8: 14
+Capítulo 9: 17
+Capítulo 10: 15
+Capítulo 11: 12
+Capítulo 12: 14
+Capítulo 13: 16
+Capítulo 14: 9
+
+Joel (JOL)
+Capítulos: 3
+Versículos por capítulo:
+Capítulo 1: 20
+Capítulo 2: 32
+Capítulo 3: 21
+
+Amós (AMO)
+Capítulos: 9
+Versículos por capítulo:
+Capítulo 1: 15
+Capítulo 2: 16
+Capítulo 3: 15
+Capítulo 4: 13
+Capítulo 5: 27
+Capítulo 6: 14
+Capítulo 7: 17
+Capítulo 8: 14
+Capítulo 9: 15
+
+Obadias (OBA)
+Capítulos: 1
+Versículos por capítulo:
+Capítulo 1: 21
+
+Jonas (JON)
+Capítulos: 4
+Versículos por capítulo:
+Capítulo 1: 17
+Capítulo 2: 10
+Capítulo 3: 10
+Capítulo 4: 11
+
+Miquéias (MIC)
+Capítulos: 7
+Versículos por capítulo:
+Capítulo 1: 16
+Capítulo 2: 13
+Capítulo 3: 12
+Capítulo 4: 13
+Capítulo 5: 15
+Capítulo 6: 16
+Capítulo 7: 20
+
+Naum (NAM)
+Capítulos: 3
+Versículos por capítulo:
+Capítulo 1: 15
+Capítulo 2: 13
+Capítulo 3: 19
+
+Habacuque (HAB)
+Capítulos: 3
+Versículos por capítulo:
+Capítulo 1: 17
+Capítulo 2: 20
+Capítulo 3: 19
+
+Sofonias (ZEP)
+Capítulos: 3
+Versículos por capítulo:
+Capítulo 1: 18
+Capítulo 2: 15
+Capítulo 3: 20
+
+Ageu (HAG)
+Capítulos: 2
+Versículos por capítulo:
+Capítulo 1: 15
+Capítulo 2: 23
+
+Zacarias (ZEC)
+Capítulos: 14
+Versículos por capítulo:
+Capítulo 1: 21
+Capítulo 2: 13
+Capítulo 3: 10
+Capítulo 4: 14
+Capítulo 5: 11
+Capítulo 6: 15
+Capítulo 7: 14
+Capítulo 8: 23
+Capítulo 9: 17
+Capítulo 10: 12
+Capítulo 11: 17
+Capítulo 12: 14
+Capítulo 13: 9
+Capítulo 14: 21
+
+Malaquias (MAL)
+Capítulos: 4
+Versículos por capítulo:
+Capítulo 1: 14
+Capítulo 2: 17
+Capítulo 3: 18
+Capítulo 4: 6

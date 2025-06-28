@@ -1,0 +1,367 @@
+Mateus (MAT)
+Capítulos: 28
+Versículos por capítulo:
+Capítulo 1: 25
+Capítulo 2: 23
+Capítulo 3: 17
+Capítulo 4: 25
+Capítulo 5: 48
+Capítulo 6: 34
+Capítulo 7: 29
+Capítulo 8: 34
+Capítulo 9: 38
+Capítulo 10: 42
+Capítulo 11: 30
+Capítulo 12: 50
+Capítulo 13: 58
+Capítulo 14: 36
+Capítulo 15: 39
+Capítulo 16: 28
+Capítulo 17: 27
+Capítulo 18: 35
+Capítulo 19: 30
+Capítulo 20: 34
+Capítulo 21: 46
+Capítulo 22: 46
+Capítulo 23: 39
+Capítulo 24: 51
+Capítulo 25: 46
+Capítulo 26: 75
+Capítulo 27: 66
+Capítulo 28: 20
+
+Marcos (MRK)
+Capítulos: 16
+Versículos por capítulo:
+Capítulo 1: 45
+Capítulo 2: 28
+Capítulo 3: 35
+Capítulo 4: 41
+Capítulo 5: 43
+Capítulo 6: 56
+Capítulo 7: 37
+Capítulo 8: 38
+Capítulo 9: 50
+Capítulo 10: 52
+Capítulo 11: 33
+Capítulo 12: 44
+Capítulo 13: 37
+Capítulo 14: 72
+Capítulo 15: 47
+Capítulo 16: 20
+
+Lucas (LUK)
+Capítulos: 24
+Versículos por capítulo:
+Capítulo 1: 80
+Capítulo 2: 52
+Capítulo 3: 38
+Capítulo 4: 44
+Capítulo 5: 39
+Capítulo 6: 49
+Capítulo 7: 50
+Capítulo 8: 56
+Capítulo 9: 62
+Capítulo 10: 42
+Capítulo 11: 54
+Capítulo 12: 59
+Capítulo 13: 35
+Capítulo 14: 35
+Capítulo 15: 32
+Capítulo 16: 31
+Capítulo 17: 37
+Capítulo 18: 43
+Capítulo 19: 48
+Capítulo 20: 47
+Capítulo 21: 38
+Capítulo 22: 71
+Capítulo 23: 56
+Capítulo 24: 53
+
+João (JHN)
+Capítulos: 21
+Versículos por capítulo:
+Capítulo 1: 51
+Capítulo 2: 25
+Capítulo 3: 36
+Capítulo 4: 54
+Capítulo 5: 47
+Capítulo 6: 71
+Capítulo 7: 53
+Capítulo 8: 59
+Capítulo 9: 41
+Capítulo 10: 42
+Capítulo 11: 57
+Capítulo 12: 50
+Capítulo 13: 38
+Capítulo 14: 31
+Capítulo 15: 27
+Capítulo 16: 33
+Capítulo 17: 26
+Capítulo 18: 40
+Capítulo 19: 42
+Capítulo 20: 31
+Capítulo 21: 25
+
+Atos (ACT)
+Capítulos: 28
+Versículos por capítulo:
+Capítulo 1: 26
+Capítulo 2: 47
+Capítulo 3: 26
+Capítulo 4: 37
+Capítulo 5: 42
+Capítulo 6: 15
+Capítulo 7: 60
+Capítulo 8: 40
+Capítulo 9: 43
+Capítulo 10: 48
+Capítulo 11: 30
+Capítulo 12: 25
+Capítulo 13: 52
+Capítulo 14: 28
+Capítulo 15: 41
+Capítulo 16: 40
+Capítulo 17: 34
+Capítulo 18: 28
+Capítulo 19: 41
+Capítulo 20: 38
+Capítulo 21: 40
+Capítulo 22: 30
+Capítulo 23: 35
+Capítulo 24: 27
+Capítulo 25: 27
+Capítulo 26: 32
+Capítulo 27: 44
+Capítulo 28: 31
+
+Romanos (ROM)
+Capítulos: 16
+Versículos por capítulo:
+Capítulo 1: 32
+Capítulo 2: 29
+Capítulo 3: 31
+Capítulo 4: 25
+Capítulo 5: 21
+Capítulo 6: 23
+Capítulo 7: 25
+Capítulo 8: 39
+Capítulo 9: 33
+Capítulo 10: 21
+Capítulo 11: 36
+Capítulo 12: 21
+Capítulo 13: 14
+Capítulo 14: 23
+Capítulo 15: 33
+Capítulo 16: 27
+
+1 Coríntios (1CO)
+Capítulos: 16
+Versículos por capítulo:
+Capítulo 1: 31
+Capítulo 2: 16
+Capítulo 3: 23
+Capítulo 4: 21
+Capítulo 5: 13
+Capítulo 6: 20
+Capítulo 7: 40
+Capítulo 8: 13
+Capítulo 9: 27
+Capítulo 10: 33
+Capítulo 11: 34
+Capítulo 12: 31
+Capítulo 13: 13
+Capítulo 14: 40
+Capítulo 15: 58
+Capítulo 16: 24
+
+2 Coríntios (2CO)
+Capítulos: 13
+Versículos por capítulo:
+Capítulo 1: 24
+Capítulo 2: 17
+Capítulo 3: 18
+Capítulo 4: 18
+Capítulo 5: 21
+Capítulo 6: 18
+Capítulo 7: 16
+Capítulo 8: 24
+Capítulo 9: 15
+Capítulo 10: 18
+Capítulo 11: 33
+Capítulo 12: 21
+Capítulo 13: 14
+
+Gálatas (GAL)
+Capítulos: 6
+Versículos por capítulo:
+Capítulo 1: 24
+Capítulo 2: 21
+Capítulo 3: 29
+Capítulo 4: 31
+Capítulo 5: 26
+Capítulo 6: 18
+
+Efésios (EPH)
+Capítulos: 6
+Versículos por capítulo:
+Capítulo 1: 23
+Capítulo 2: 22
+Capítulo 3: 21
+Capítulo 4: 32
+Capítulo 5: 33
+Capítulo 6: 24
+
+Filipenses (PHP)
+Capítulos: 4
+Versículos por capítulo:
+Capítulo 1: 30
+Capítulo 2: 30
+Capítulo 3: 21
+Capítulo 4: 23
+
+Colossenses (COL)
+Capítulos: 4
+Versículos por capítulo:
+Capítulo 1: 29
+Capítulo 2: 23
+Capítulo 3: 25
+Capítulo 4: 18
+
+1 Tessalonicenses (1TH)
+Capítulos: 5
+Versículos por capítulo:
+Capítulo 1: 10
+Capítulo 2: 20
+Capítulo 3: 13
+Capítulo 4: 18
+Capítulo 5: 28
+
+2 Tessalonicenses (2TH)
+Capítulos: 3
+Versículos por capítulo:
+Capítulo 1: 12
+Capítulo 2: 17
+Capítulo 3: 18
+
+1 Timóteo (1TI)
+Capítulos: 6
+Versículos por capítulo:
+Capítulo 1: 20
+Capítulo 2: 15
+Capítulo 3: 16
+Capítulo 4: 16
+Capítulo 5: 25
+Capítulo 6: 21
+
+2 Timóteo (2TI)
+Capítulos: 4
+Versículos por capítulo:
+Capítulo 1: 18
+Capítulo 2: 26
+Capítulo 3: 17
+Capítulo 4: 22
+
+Tito (TIT)
+Capítulos: 3
+Versículos por capítulo:
+Capítulo 1: 16
+Capítulo 2: 15
+Capítulo 3: 15
+
+Filemom (PHM)
+Capítulos: 1
+Versículos por capítulo:
+Capítulo 1: 25
+
+Hebreus (HEB)
+Capítulos: 13
+Versículos por capítulo:
+Capítulo 1: 14
+Capítulo 2: 18
+Capítulo 3: 19
+Capítulo 4: 16
+Capítulo 5: 14
+Capítulo 6: 20
+Capítulo 7: 28
+Capítulo 8: 13
+Capítulo 9: 28
+Capítulo 10: 39
+Capítulo 11: 40
+Capítulo 12: 29
+Capítulo 13: 25
+
+Tiago (JAS)
+Capítulos: 5
+Versículos por capítulo:
+Capítulo 1: 27
+Capítulo 2: 26
+Capítulo 3: 18
+Capítulo 4: 17
+Capítulo 5: 20
+
+1 Pedro (1PE)
+Capítulos: 5
+Versículos por capítulo:
+Capítulo 1: 25
+Capítulo 2: 25
+Capítulo 3: 22
+Capítulo 4: 19
+Capítulo 5: 14
+
+2 Pedro (2PE)
+Capítulos: 3
+Versículos por capítulo:
+Capítulo 1: 21
+Capítulo 2: 22
+Capítulo 3: 18
+
+1 João (1JN)
+Capítulos: 5
+Versículos por capítulo:
+Capítulo 1: 10
+Capítulo 2: 29
+Capítulo 3: 24
+Capítulo 4: 21
+Capítulo 5: 21
+
+2 João (2JN)
+Capítulos: 1
+Versículos por capítulo:
+Capítulo 1: 13
+
+3 João (3JN)
+Capítulos: 1
+Versículos por capítulo:
+Capítulo 1: 15
+
+Judas (JUD)
+Capítulos: 1
+Versículos por capítulo:
+Capítulo 1: 25
+
+Apocalipse (REV)
+Capítulos: 22
+Versículos por capítulo:
+Capítulo 1: 20
+Capítulo 2: 29
+Capítulo 3: 22
+Capítulo 4: 11
+Capítulo 5: 14
+Capítulo 6: 17
+Capítulo 7: 17
+Capítulo 8: 13
+Capítulo 9: 21
+Capítulo 10: 11
+Capítulo 11: 19
+Capítulo 12: 18
+Capítulo 13: 18
+Capítulo 14: 20
+Capítulo 15: 8
+Capítulo 16: 21
+Capítulo 17: 18
+Capítulo 18: 24
+Capítulo 19: 21
+Capítulo 20: 15
+Capítulo 21: 27
+Capítulo 22: 21
