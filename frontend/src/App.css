@@ -27,6 +27,10 @@ body {
   margin-bottom: 25px;
 }
 
+.titulo-container {
+  /* Container para o h1 e a navegação */
+}
+
 .titulo-container h1 {
   color: #0038a8;
   font-size: 2.5em;
@@ -73,12 +77,13 @@ body {
 
 .area-logada button {
   background-color: #d9534f;
+}
+
 .area-login button:hover, .area-logada button:hover {
   background-color: #002e85;
 }
 .area-logada button:hover {
   background-color: #c9302c;
-}
 }
 
 /* --- FIM DA SEÇÃO DO CABEÇALHO --- */
@@ -304,16 +309,21 @@ body {
   padding: 5px;
 }
 .botao-remover-favorito:hover {
-  color: #d9534f; /* Vermelho ao passar o mouse */
+  color: #d9534f;
 }
 
-/* Estilos para estado favoritado */
-.controles-navegacao-container button.favoritado,
-.favorito-sugestao.favoritado {
-  background-color: #0038a8; /* Cor de fundo azul */
-  color: #ffc107; /* Cor da estrela/texto amarela */
+/* --- Estilos para estado favoritado (SEPARADOS) --- */
+/* Para o BOTÃO de favoritar na busca */
+.controles-navegacao-container button.favoritado {
+  background-color: #0038a8;
+  color: #ffc107;
   border-color: #002e85;
 }
+
+.favorito-sugestao.favoritado {
+  color: #ffc107; /* Apenas muda a cor da estrela para amarelo */
+}
+/* FIM DOS ESTILOS SEPARADOS */
 
 /* Rodapé */
 .rodape {
