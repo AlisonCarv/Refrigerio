@@ -6,9 +6,12 @@ import './App.css';
 import App from './App';
 
 const elementoRaiz = ReactDOM.createRoot(document.getElementById('root'));
+
+const basename = process.env.PUBLIC_URL;
+
 elementoRaiz.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename={basename}>
       <App />
     </BrowserRouter>
   </React.StrictMode>
