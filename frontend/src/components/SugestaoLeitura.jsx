@@ -15,46 +15,60 @@ function SugestaoLeitura() {
       try {
         const resposta = await fetch(`/api/suggestion/${estado.versao}`);
         const dados = await resposta.json();
-        if (!resposta.ok) throw new Error(dados.message || 'Erro ao buscar sugestão.');
+
+        if (!resposta.ok) {
+          throw new Error(dados.message || 'Erro ao buscar sugestão.');
+        }
+        
         if (dados && dados.text) {
           despachar({
             type: 'DEFINIR_SUGESTAO',
             payload: {
+              // O payload agora inclui a versão para a qual a sugestão foi buscada
               sugestao: { text: dados.text.trim(), book: dados.book, chapter: dados.chapter, verse: dados.verse },
-              version: estado.versao, // Envia a versão atual junto com a sugestão
+              version: estado.versao,
             },
           });
         } else {
-          throw new Error('Sugestão não encontrada no formato esperado.');
+          throw new Error('Sugestão não encontrada.');
         }
       } catch (erro) {
         despachar({ type: 'ERRO_SUGESTAO', payload: erro.message });
       }
     };
 
-    // Só busca se a sessão já foi carregada E se (não existe sugestão OU a versão da sugestão é diferente da versão atual do app)
+    // A busca só acontece se:
+    // 1. A verificação de login inicial já terminou (carregandoSessao é false).
+    // 2. E (não existe uma sugestão OU a versão da sugestão atual é diferente da versão do app).
     if (!estado.carregandoSessao && (!estado.sugestao || estado.sugestao.version !== estado.versao)) {
       buscarSugestao();
     }
     
-  }, [estado.versao, estado.carregandoSessao, estado.sugestao, despachar]);
+  }, [estado.versao, estado.carregandoSessao, despachar]);
 
 
   const handleToggleFavorito = async () => {
     if (!estado.sugestao || !estado.token) return;
-    const { text } = estado.sugestao;
-    const reference = referenciaSugestao;
+
+    const { text, book, chapter, verse } = estado.sugestao;
+    const reference = `${book} ${chapter}:${verse}`;
     const method = isFavorito ? 'DELETE' : 'POST';
+
     try {
       const resposta = await fetch('/api/favorites', {
         method: method,
-        headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${estado.token}` },
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': `Bearer ${estado.token}`
+        },
         body: JSON.stringify({ reference, text, version: estado.versao })
       });
+
       if (!resposta.ok) {
         const erro = await resposta.json();
         throw new Error(erro.message || 'Não foi possível atualizar o favorito.');
       }
+      
       if (isFavorito) {
         despachar({ type: 'REMOVE_FAVORITE', payload: { reference } });
       } else {
