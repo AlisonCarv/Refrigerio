@@ -2,6 +2,7 @@
 import React, { createContext, useReducer, useEffect } from 'react';
 
 const estadoInicial = {
+  carregandoSessao: true, // Para saber se a verificação inicial do localStorage já terminou
   usuario: null,
   token: null,
   favoritos: new Set(),
@@ -20,44 +21,36 @@ const estadoInicial = {
 
 function redutorBiblia(estado, acao) {
   switch (acao.type) {
+    case 'SESSAO_CARREGADA':
+      return { ...estado, carregandoSessao: false };
     case 'LOGIN_SUCCESS':
       return { ...estado, usuario: acao.payload.usuario, token: acao.payload.token };
     case 'LOGOUT':
       return { ...estado, usuario: null, token: null, favoritos: new Set() };
-    
     case 'SET_FAVORITES':
       const favoriteSet = new Set(acao.payload.map(fav => fav.reference));
       return { ...estado, favoritos: favoriteSet };
-
     case 'ADD_FAVORITE':
       const newFavoritesAdd = new Set(estado.favoritos);
       newFavoritesAdd.add(acao.payload.reference);
       return { ...estado, favoritos: newFavoritesAdd };
-
     case 'REMOVE_FAVORITE':
       const newFavoritesRemove = new Set(estado.favoritos);
       newFavoritesRemove.delete(acao.payload.reference);
       return { ...estado, favoritos: newFavoritesRemove };
-
     case 'DEFINIR_IDIOMA_VERSAO':
       return {
         ...estado,
         idioma: acao.payload.idioma,
         versao: acao.payload.versao,
-        livroBuscadoContexto: '',
-        capituloBuscadoContexto: '',
-        versiculoBuscadoContexto: '',
         textoResultado: null,
         erroBusca: '',
       };
 
     case 'CARREGANDO_BUSCA':
       return { ...estado, carregandoBusca: acao.payload, erroBusca: '', textoResultado: null };
-
     case 'DEFINIR_RESULTADO':
-      if (!acao.payload) {
-        return { ...estado, textoResultado: null, carregandoBusca: false, erroBusca: '' };
-      }
+      if (!acao.payload) { return { ...estado, textoResultado: null, carregandoBusca: false, erroBusca: '' }; }
       return {
         ...estado,
         textoResultado: { 
@@ -71,19 +64,14 @@ function redutorBiblia(estado, acao) {
         carregandoBusca: false,
         erroBusca: '',
       };
-
     case 'ERRO_BUSCA':
       return { ...estado, erroBusca: acao.payload, carregandoBusca: false, textoResultado: null };
-
     case 'CARREGANDO_SUGESTAO':
       return { ...estado, carregandoSugestao: acao.payload, erroSugestao: '' };
-
     case 'DEFINIR_SUGESTAO':
       return { ...estado, sugestao: acao.payload, carregandoSugestao: false, erroSugestao: '' };
-
     case 'ERRO_SUGESTAO':
       return { ...estado, erroSugestao: acao.payload, carregandoSugestao: false, sugestao: null };
-
     default:
       return estado;
   }
@@ -101,22 +89,17 @@ export function EstadoBibliaProvider({ children }) {
       try {
         const usuario = JSON.parse(usuarioJSON);
         despachar({ type: 'LOGIN_SUCCESS', payload: { usuario, token } });
-
         fetch('/api/favorites', { headers: { 'Authorization': `Bearer ${token}` } })
-          .then(res => res.json())
-          .then(data => {
-            if (data && Array.isArray(data)) {
-              despachar({ type: 'SET_FAVORITES', payload: data });
-            }
-          })
+          .then(res => res.ok ? res.json() : [])
+          .then(data => despachar({ type: 'SET_FAVORITES', payload: data }))
           .catch(err => console.error("Erro ao buscar favoritos iniciais:", err));
-
       } catch (e) {
-        console.error("Erro ao parsear dados do usuário do localStorage", e);
-        localStorage.removeItem('token');
-        localStorage.removeItem('usuario');
+        console.error("Erro ao carregar dados do usuário:", e);
+        localStorage.clear();
       }
     }
+    // Informa à aplicação que a verificação inicial terminou
+    despachar({ type: 'SESSAO_CARREGADA' }); 
   }, []);
 
   return (

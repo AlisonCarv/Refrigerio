@@ -85,7 +85,7 @@ function MeusFavoritos() {
                 title="Remover dos Favoritos"
                 onClick={() => handleRemoverFavorito(fav.reference)}
               >
-                × {/* Este é o caractere 'X' de multiplicação */}
+                × {/* Ícone de remover favorito */}
               </button>
               <p className="texto-biblico">"{fav.text}"</p>
               <p className="referencia-busca">({fav.reference}) - {fav.version}</p>
