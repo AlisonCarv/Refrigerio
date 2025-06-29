@@ -1,5 +1,4 @@
 // Aluno: Álison Christian Rebouças Vidal de Carvalho - RA 2565765
-
 import React, { useContext } from 'react';
 import { EstadoBibliaContexto } from '../contexts/EstadoBibliaContexto';
 
