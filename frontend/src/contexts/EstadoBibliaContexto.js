@@ -2,7 +2,7 @@
 import React, { createContext, useReducer, useEffect } from 'react';
 
 const estadoInicial = {
-  carregandoSessao: true, // Para saber se a verificação inicial do localStorage já terminou
+  carregandoSessao: true,
   usuario: null,
   token: null,
   favoritos: new Set(),
@@ -46,7 +46,6 @@ function redutorBiblia(estado, acao) {
         textoResultado: null,
         erroBusca: '',
       };
-
     case 'CARREGANDO_BUSCA':
       return { ...estado, carregandoBusca: acao.payload, erroBusca: '', textoResultado: null };
     case 'DEFINIR_RESULTADO':
@@ -69,7 +68,16 @@ function redutorBiblia(estado, acao) {
     case 'CARREGANDO_SUGESTAO':
       return { ...estado, carregandoSugestao: acao.payload, erroSugestao: '' };
     case 'DEFINIR_SUGESTAO':
-      return { ...estado, sugestao: acao.payload, carregandoSugestao: false, erroSugestao: '' };
+      // A sugestão é um objeto que também armazena sua versão
+      return { 
+        ...estado, 
+        sugestao: { 
+          ...acao.payload.sugestao,
+          version: acao.payload.version, // Armazena a versão da sugestão
+        },
+        carregandoSugestao: false, 
+        erroSugestao: '' 
+      };
     case 'ERRO_SUGESTAO':
       return { ...estado, erroSugestao: acao.payload, carregandoSugestao: false, sugestao: null };
     default:
@@ -98,7 +106,6 @@ export function EstadoBibliaProvider({ children }) {
         localStorage.clear();
       }
     }
-    // Informa à aplicação que a verificação inicial terminou
     despachar({ type: 'SESSAO_CARREGADA' }); 
   }, []);
 
