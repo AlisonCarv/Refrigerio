@@ -10,7 +10,6 @@ const protect = (req, res, next) => {
       // Pega o token da string "Bearer <token>"
       token = req.headers.authorization.split(' ')[1];
 
-      // É ESSENCIAL usar uma chave secreta segura e guardá-la em variáveis de ambiente em um projeto real.
       // Por simplicidade do projeto, usaremos a mesma string do arquivo de rotas.
       const secretKey = 'sua-chave-secreta-muito-segura-e-dificil';
 
