@@ -40,3 +40,7 @@ Thumbs.db
 # Arquivos gerados pelo create-react-app que não precisam ir para o repositório
 .pnp
 .pnp.js
+
+# Certificados e chaves SSL
+key.pem
+cert.pem
