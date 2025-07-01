@@ -42,3 +42,14 @@
 {"level":"info","message":"\u001b[0mGET /api/favorites \u001b[36m304\u001b[0m 1.709 ms - -\u001b[0m","timestamp":"2025-07-01T16:21:04.734Z"}
 {"level":"info","message":"\u001b[0mDELETE /api/favorites \u001b[32m200\u001b[0m 340.776 ms - 32\u001b[0m","timestamp":"2025-07-01T16:21:06.344Z"}
 {"level":"info","message":"\u001b[0mGET /api/suggestion/web \u001b[32m200\u001b[0m 688.281 ms - 188\u001b[0m","timestamp":"2025-07-01T16:21:08.763Z"}
+{"level":"info","message":"Servidor backend SEGURO (HTTPS) rodando na porta 3001","timestamp":"2025-07-01T16:28:32.942Z"}
+{"level":"info","message":"\u001b[0mGET /api/favorites \u001b[32m200\u001b[0m 13.740 ms - 2\u001b[0m","timestamp":"2025-07-01T16:28:44.786Z"}
+{"level":"info","message":"\u001b[0mGET /api/favorites \u001b[36m304\u001b[0m 3.659 ms - -\u001b[0m","timestamp":"2025-07-01T16:28:44.825Z"}
+{"level":"info","message":"\u001b[0mGET /api/suggestion/almeida \u001b[32m200\u001b[0m 844.394 ms - 263\u001b[0m","timestamp":"2025-07-01T16:28:45.672Z"}
+{"level":"info","message":"\u001b[0mPOST /api/verse/search \u001b[32m200\u001b[0m 586.615 ms - 295\u001b[0m","timestamp":"2025-07-01T16:28:52.709Z"}
+{"level":"info","message":"\u001b[0mPOST /api/verse/search \u001b[32m200\u001b[0m 297.264 ms - 339\u001b[0m","timestamp":"2025-07-01T16:28:53.963Z"}
+{"level":"info","message":"\u001b[0mPOST /api/verse/search \u001b[32m200\u001b[0m 312.514 ms - 312\u001b[0m","timestamp":"2025-07-01T16:28:54.991Z"}
+{"level":"info","message":"\u001b[0mPOST /api/favorites \u001b[32m201\u001b[0m 317.990 ms - 37\u001b[0m","timestamp":"2025-07-01T16:28:55.894Z"}
+{"level":"info","message":"\u001b[0mGET /api/favorites \u001b[32m200\u001b[0m 2.282 ms - 207\u001b[0m","timestamp":"2025-07-01T16:28:57.048Z"}
+{"level":"info","message":"\u001b[0mGET /api/favorites \u001b[36m304\u001b[0m 2.580 ms - -\u001b[0m","timestamp":"2025-07-01T16:28:57.062Z"}
+{"level":"info","message":"\u001b[0mDELETE /api/favorites \u001b[32m200\u001b[0m 334.661 ms - 32\u001b[0m","timestamp":"2025-07-01T16:28:58.439Z"}

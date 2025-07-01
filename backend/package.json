@@ -1,32 +1,34 @@
 {
   "name": "backend",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "prestart": "node -e \"const fs = require('fs'); if (!fs.existsSync('./src/config/key.pem')) { console.log('Certificado SSL não encontrado. Gerando...'); require('child_process').execSync('npm run setup:dev', { stdio: 'inherit' }); }\"",
     "start": "nodemon server.js",
+    "setup:dev": "openssl req -x509 -newkey rsa:2048 -keyout ./src/config/key.pem -out ./src/config/cert.pem -sha256 -days 365 -nodes -subj \"/C=BR/ST=Parana/L=Cornelio Procopio/O=UTFPR/OU=Development/CN=localhost\"",
     "knex:migrate": "knex --knexfile knexfile.js migrate:latest",
     "knex:seed": "knex --knexfile knexfile.js seed:run"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
   "dependencies": {
-    "bcryptjs": "^3.0.2",
+    "bcryptjs": "^2.4.3",
     "celebrate": "^15.0.3",
-    "compression": "^1.8.0",
+    "compression": "^1.7.4",
     "cors": "^2.8.5",
-    "express": "^5.1.0",
-    "express-rate-limit": "^7.5.1",
-    "express-xss-sanitizer": "^2.0.0",
+    "express": "^4.19.2",
+    "express-rate-limit": "^7.3.1",
+    "express-xss-sanitizer": "^1.2.0",
     "jsonwebtoken": "^9.0.2",
     "knex": "^3.1.0",
     "morgan": "^1.10.0",
     "sqlite3": "^5.1.7",
-    "winston": "^3.17.0"
+    "winston": "^3.13.0"
   },
   "devDependencies": {
-    "nodemon": "^3.1.10"
+    "nodemon": "^3.1.2"
   }
 }
