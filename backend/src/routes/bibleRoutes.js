@@ -6,7 +6,6 @@ const { celebrate, Joi, Segments } = require('celebrate');
 const FavoriteModel = require('../models/favorite.model');
 const BibleModel = require('../models/bible.model');
 
-// Função auxiliar para fazer o fetch e tratar respostas não-JSON
 async function fetchAndParse(url) {
   const response = await fetch(url);
   const contentType = response.headers.get("content-type");
@@ -19,7 +18,6 @@ async function fetchAndParse(url) {
   }
 }
 
-// --- ROTA DE SUGESTÃO (PÚBLICA) ---
 router.get('/suggestion/:version', async (req, res, next) => {
   try {
     const { version } = req.params;
@@ -28,12 +26,8 @@ router.get('/suggestion/:version', async (req, res, next) => {
     if (!ok || data.error) throw new Error(data.error || 'Não foi possível obter a sugestão.');
     if (data.random_verse) res.status(200).json(data.random_verse);
     else res.status(404).json({ message: 'Sugestão não encontrada.' });
-  } catch (error) {
-    next(error);
-  }
+  } catch (error) { next(error); }
 });
-
-// --- ROTAS DE FAVORITOS (PROTEGIDAS) ---
 
 const favoriteValidation = celebrate({
   [Segments.BODY]: Joi.object().keys({
@@ -50,18 +44,14 @@ router.post('/favorites', protect, favoriteValidation, async (req, res, next) =>
     if (existing) return res.status(200).json({ message: 'Já favoritado.', favorite: existing });
     await FavoriteModel.create({ user_id, reference, text, version });
     res.status(201).json({ message: 'Favoritado com sucesso.' });
-  } catch (error) {
-    next(error);
-  }
+  } catch (error) { next(error); }
 });
 
 router.get('/favorites', protect, async (req, res, next) => {
   try {
     const favorites = await FavoriteModel.findByUser(req.user.id);
     res.status(200).json(favorites);
-  } catch (error) {
-    next(error);
-  }
+  } catch (error) { next(error); }
 });
 
 const deleteFavoriteValidation = celebrate({
@@ -74,18 +64,14 @@ router.delete('/favorites', protect, deleteFavoriteValidation, async (req, res, 
     const count = await FavoriteModel.remove({ user_id, reference });
     if (count > 0) res.status(200).json({ message: 'Favorito removido.' });
     else res.status(404).json({ message: 'Favorito não encontrado.' });
-  } catch (error) {
-    next(error);
-  }
+  } catch (error) { next(error); }
 });
-
-// --- ROTA DE BUSCA E NAVEGAÇÃO ---
 
 const searchValidation = celebrate({
   [Segments.BODY]: Joi.object().keys({
     book: Joi.string().required(),
-    chapter: Joi.string().pattern(/^[0-9]+$/).required(),
-    verse: Joi.string().pattern(/^[0-9]+$/).required(),
+    chapter: Joi.alternatives().try(Joi.string().pattern(/^[0-9]+$/), Joi.number()).required(),
+    verse: Joi.alternatives().try(Joi.string().pattern(/^[0-9]+$/), Joi.number()).required(),
     version: Joi.string().required(),
   }),
 });
