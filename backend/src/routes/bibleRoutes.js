@@ -2,6 +2,7 @@
 const express = require('express');
 const router = express.Router();
 const { protect } = require('../middleware/authMiddleware');
+const { celebrate, Joi, Segments } = require('celebrate');
 const FavoriteModel = require('../models/favorite.model');
 const BibleModel = require('../models/bible.model');
 
@@ -9,7 +10,6 @@ const BibleModel = require('../models/bible.model');
 async function fetchAndParse(url) {
   const response = await fetch(url);
   const contentType = response.headers.get("content-type");
-
   if (contentType && contentType.indexOf("application/json") !== -1) {
     const data = await response.json();
     return { ok: response.ok, data };
@@ -20,57 +20,78 @@ async function fetchAndParse(url) {
 }
 
 // --- ROTA DE SUGESTÃO (PÚBLICA) ---
-router.get('/suggestion/:version', async (req, res) => {
-  const { version } = req.params;
-  if (!version) return res.status(400).json({ message: 'A versão é obrigatória.' });
+router.get('/suggestion/:version', async (req, res, next) => {
   try {
+    const { version } = req.params;
     const apiUrl = `https://bible-api.com/data/${version}/random`;
     const { ok, data } = await fetchAndParse(apiUrl);
     if (!ok || data.error) throw new Error(data.error || 'Não foi possível obter a sugestão.');
     if (data.random_verse) res.status(200).json(data.random_verse);
-    else res.status(404).json({ message: 'Sugestão não encontrada no formato esperado.' });
+    else res.status(404).json({ message: 'Sugestão não encontrada.' });
   } catch (error) {
-    console.error('Erro ao buscar sugestão da API externa:', error);
-    res.status(500).json({ message: error.message || 'Erro interno no servidor.' });
+    next(error);
   }
 });
 
 // --- ROTAS DE FAVORITOS (PROTEGIDAS) ---
-router.post('/favorites', protect, async (req, res) => {
-  const { reference, text, version } = req.body;
-  const user_id = req.user.id;
-  if (!reference || !text || !version) return res.status(400).json({ message: 'Dados incompletos.' });
+
+const favoriteValidation = celebrate({
+  [Segments.BODY]: Joi.object().keys({
+    reference: Joi.string().required(),
+    text: Joi.string().required(),
+    version: Joi.string().required(),
+  }),
+});
+router.post('/favorites', protect, favoriteValidation, async (req, res, next) => {
   try {
+    const { reference, text, version } = req.body;
+    const user_id = req.user.id;
     const existing = await FavoriteModel.findOne({ user_id, reference });
     if (existing) return res.status(200).json({ message: 'Já favoritado.', favorite: existing });
     await FavoriteModel.create({ user_id, reference, text, version });
     res.status(201).json({ message: 'Favoritado com sucesso.' });
-  } catch (error) { res.status(500).json({ message: 'Erro ao salvar favorito.' }); }
+  } catch (error) {
+    next(error);
+  }
 });
 
-router.get('/favorites', protect, async (req, res) => {
+router.get('/favorites', protect, async (req, res, next) => {
   try {
     const favorites = await FavoriteModel.findByUser(req.user.id);
     res.status(200).json(favorites);
-  } catch (error) { res.status(500).json({ message: 'Erro ao buscar favoritos.' }); }
+  } catch (error) {
+    next(error);
+  }
 });
 
-router.delete('/favorites', protect, async (req, res) => {
-  const { reference } = req.body;
-  const user_id = req.user.id;
-  if (!reference) return res.status(400).json({ message: 'Referência obrigatória.' });
+const deleteFavoriteValidation = celebrate({
+  [Segments.BODY]: Joi.object().keys({ reference: Joi.string().required() })
+});
+router.delete('/favorites', protect, deleteFavoriteValidation, async (req, res, next) => {
   try {
+    const { reference } = req.body;
+    const user_id = req.user.id;
     const count = await FavoriteModel.remove({ user_id, reference });
     if (count > 0) res.status(200).json({ message: 'Favorito removido.' });
     else res.status(404).json({ message: 'Favorito não encontrado.' });
-  } catch (error) { res.status(500).json({ message: 'Erro ao remover favorito.' }); }
+  } catch (error) {
+    next(error);
+  }
 });
 
 // --- ROTA DE BUSCA E NAVEGAÇÃO ---
-router.post('/verse/search', async (req, res) => {
-  const { book, chapter, verse, version } = req.body;
-  if (!book || !chapter || !verse || !version) return res.status(400).json({ message: 'Dados incompletos.' });
+
+const searchValidation = celebrate({
+  [Segments.BODY]: Joi.object().keys({
+    book: Joi.string().required(),
+    chapter: Joi.string().pattern(/^[0-9]+$/).required(),
+    verse: Joi.string().pattern(/^[0-9]+$/).required(),
+    version: Joi.string().required(),
+  }),
+});
+router.post('/verse/search', searchValidation, async (req, res, next) => {
   try {
+    const { book, chapter, verse, version } = req.body;
     const apiUrl = `https://bible-api.com/${book.trim().replace(/\s+/g, '+')}+${chapter}:${verse}?translation=${version}`;
     const { ok, data: apiData } = await fetchAndParse(apiUrl);
     
@@ -112,8 +133,7 @@ router.post('/verse/search', async (req, res) => {
       navigation: { previous: previousVerse, next: nextVerse },
     });
   } catch (error) { 
-    console.error('Erro na rota /verse/search:', error.message);
-    res.status(500).json({ message: error.message || 'Erro interno no servidor.' }); 
+    next(error); 
   }
 });
 

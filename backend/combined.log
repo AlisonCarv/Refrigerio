@@ -1,0 +1,31 @@
+{"level":"info","message":"Servidor backend SEGURO (HTTPS) rodando na porta 3001","timestamp":"2025-07-01T15:45:27.107Z"}
+{"level":"info","message":"Servidor backend SEGURO (HTTPS) rodando na porta 3001","timestamp":"2025-07-01T15:54:22.167Z"}
+{"level":"info","message":"\u001b[0mGET /suggestion/almeida \u001b[33m404\u001b[0m 3.257 ms - 157\u001b[0m","timestamp":"2025-07-01T15:54:46.073Z"}
+{"level":"info","message":"\u001b[0mGET /suggestion/almeida \u001b[33m404\u001b[0m 0.981 ms - 157\u001b[0m","timestamp":"2025-07-01T15:54:47.890Z"}
+{"level":"info","message":"\u001b[0mGET /suggestion/almeida \u001b[33m404\u001b[0m 0.665 ms - 157\u001b[0m","timestamp":"2025-07-01T15:54:48.414Z"}
+{"level":"info","message":"\u001b[0mGET /suggestion/almeida \u001b[33m404\u001b[0m 0.448 ms - 157\u001b[0m","timestamp":"2025-07-01T15:54:48.774Z"}
+{"level":"info","message":"\u001b[0mGET /suggestion/almeida \u001b[33m404\u001b[0m 0.681 ms - 157\u001b[0m","timestamp":"2025-07-01T15:54:49.152Z"}
+{"level":"info","message":"\u001b[0mGET /suggestion/almeida \u001b[33m404\u001b[0m 0.476 ms - 157\u001b[0m","timestamp":"2025-07-01T15:54:49.343Z"}
+{"level":"info","message":"\u001b[0mGET /suggestion/almeida \u001b[33m404\u001b[0m 0.442 ms - 157\u001b[0m","timestamp":"2025-07-01T15:54:49.549Z"}
+{"level":"info","message":"\u001b[0mGET /suggestion/almeida \u001b[33m404\u001b[0m 0.554 ms - 157\u001b[0m","timestamp":"2025-07-01T15:54:49.741Z"}
+{"level":"info","message":"\u001b[0mGET /suggestion/almeida \u001b[33m404\u001b[0m 1.020 ms - 157\u001b[0m","timestamp":"2025-07-01T15:54:49.853Z"}
+{"level":"info","message":"\u001b[0mGET /suggestion/almeida \u001b[33m404\u001b[0m 0.582 ms - 157\u001b[0m","timestamp":"2025-07-01T15:54:50.006Z"}
+{"level":"info","message":"\u001b[0mGET /suggestion/almeida \u001b[33m404\u001b[0m 0.343 ms - 157\u001b[0m","timestamp":"2025-07-01T15:54:50.350Z"}
+{"level":"info","message":"\u001b[0mGET /suggestion/almeida \u001b[33m404\u001b[0m 0.322 ms - 157\u001b[0m","timestamp":"2025-07-01T15:54:50.480Z"}
+{"level":"info","message":"\u001b[0mGET /suggestion/almeida \u001b[33m404\u001b[0m 0.408 ms - 157\u001b[0m","timestamp":"2025-07-01T15:54:50.711Z"}
+{"level":"info","message":"\u001b[0mGET /suggestion/almeida \u001b[33m404\u001b[0m 0.323 ms - 157\u001b[0m","timestamp":"2025-07-01T15:54:50.856Z"}
+{"level":"info","message":"\u001b[0mGET /suggestion/almeida \u001b[33m404\u001b[0m 1.048 ms - 157\u001b[0m","timestamp":"2025-07-01T15:54:51.004Z"}
+{"level":"info","message":"\u001b[0mPOST /verse/search \u001b[33m404\u001b[0m 0.206 ms - 152\u001b[0m","timestamp":"2025-07-01T15:54:56.396Z"}
+{"level":"info","message":"Servidor backend SEGURO (HTTPS) rodando na porta 3001","timestamp":"2025-07-01T16:06:57.947Z"}
+{"level":"info","message":"\u001b[0mGET /api/suggestion/almeida \u001b[32m200\u001b[0m 1282.767 ms - 138\u001b[0m","timestamp":"2025-07-01T16:07:28.799Z"}
+{"level":"info","message":"\u001b[0mPOST /api/login \u001b[32m200\u001b[0m 290.460 ms - 241\u001b[0m","timestamp":"2025-07-01T16:07:43.433Z"}
+{"level":"info","message":"\u001b[0mGET /api/favorites \u001b[32m200\u001b[0m 2.941 ms - 2\u001b[0m","timestamp":"2025-07-01T16:07:43.460Z"}
+{"level":"info","message":"\u001b[0mPOST /api/verse/search \u001b[32m200\u001b[0m 579.617 ms - 262\u001b[0m","timestamp":"2025-07-01T16:07:53.216Z"}
+{"level":"info","message":"\u001b[0mPOST /api/favorites \u001b[32m201\u001b[0m 338.176 ms - 37\u001b[0m","timestamp":"2025-07-01T16:07:55.191Z"}
+{"level":"info","message":"\u001b[0mPOST /api/favorites \u001b[32m201\u001b[0m 342.890 ms - 37\u001b[0m","timestamp":"2025-07-01T16:07:56.871Z"}
+{"level":"info","message":"\u001b[0mGET /api/favorites \u001b[32m200\u001b[0m 2.067 ms - 300\u001b[0m","timestamp":"2025-07-01T16:07:58.124Z"}
+{"level":"info","message":"\u001b[0mGET /api/favorites \u001b[36m304\u001b[0m 1.890 ms - -\u001b[0m","timestamp":"2025-07-01T16:07:58.145Z"}
+{"level":"info","message":"\u001b[0mDELETE /api/favorites \u001b[32m200\u001b[0m 349.084 ms - 32\u001b[0m","timestamp":"2025-07-01T16:07:59.651Z"}
+{"level":"info","message":"\u001b[0mDELETE /api/favorites \u001b[32m200\u001b[0m 574.313 ms - 32\u001b[0m","timestamp":"2025-07-01T16:08:00.694Z"}
+{"level":"info","message":"\u001b[0mGET /api/favorites \u001b[32m200\u001b[0m 1.956 ms - 2\u001b[0m","timestamp":"2025-07-01T16:08:16.280Z"}
+{"level":"info","message":"\u001b[0mGET /api/favorites \u001b[36m304\u001b[0m 2.088 ms - -\u001b[0m","timestamp":"2025-07-01T16:08:16.321Z"}
