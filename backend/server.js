@@ -31,7 +31,7 @@ app.use(express.json());
 app.use(compression());
 
 // Sanitizer para prevenir ataques XSS
-app.use(xss()); // CORREÇÃO NO USO (JÁ ESTAVA CORRETO, O PROBLEMA ERA A IMPORTAÇÃO)
+app.use(xss());
 
 // Logger de requisições HTTP
 app.use(morgan('dev', { stream: { write: (message) => logger.info(message.trim()) } }));
