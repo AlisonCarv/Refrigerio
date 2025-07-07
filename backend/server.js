@@ -7,7 +7,8 @@ const cors = require('cors');
 const compression = require('compression');
 const morgan = require('morgan');
 const rateLimit = require('express-rate-limit');
-const { xss } = require('express-xss-sanitizer'); // CORREÇÃO NA IMPORTAÇÃO
+const { xss } = require('express-xss-sanitizer');
+const mongoSanitize = require('express-mongo-sanitize');
 const { errors } = require('celebrate');
 const logger = require('./src/config/logger');
 
@@ -32,6 +33,9 @@ app.use(compression());
 
 // Sanitizer para prevenir ataques XSS
 app.use(xss());
+
+// Sanitizer para prevenir NoSQL/SQL Injection
+app.use(mongoSanitize());
 
 // Logger de requisições HTTP
 app.use(morgan('dev', { stream: { write: (message) => logger.info(message.trim()) } }));

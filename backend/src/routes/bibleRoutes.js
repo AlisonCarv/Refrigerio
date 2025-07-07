@@ -3,9 +3,12 @@ const express = require('express');
 const router = express.Router();
 const { protect } = require('../middleware/authMiddleware');
 const { celebrate, Joi, Segments } = require('celebrate');
+const mcache = require('memory-cache'); // Para o Cache
+const logger = require('../config/logger'); // Para o Monitoramento
 const FavoriteModel = require('../models/favorite.model');
 const BibleModel = require('../models/bible.model');
 
+// Função auxiliar para fazer o fetch e tratar respostas não-JSON
 async function fetchAndParse(url) {
   const response = await fetch(url);
   const contentType = response.headers.get("content-type");
@@ -18,7 +21,25 @@ async function fetchAndParse(url) {
   }
 }
 
-router.get('/suggestion/:version', async (req, res, next) => {
+// Middleware de Cache explícito
+const cacheMiddleware = (duration) => (req, res, next) => {
+  const key = '__express__' + req.originalUrl || req.url;
+  const cachedBody = mcache.get(key);
+  if (cachedBody) {
+    logger.info(`Servindo sugestão para "${req.params.version}" do cache.`);
+    res.send(cachedBody);
+    return;
+  }
+  res.sendResponse = res.send;
+  res.send = (body) => {
+    mcache.put(key, body, duration * 1000);
+    res.sendResponse(body);
+  };
+  next();
+};
+
+// --- ROTA DE SUGESTÃO (PÚBLICA) ---
+router.get('/suggestion/:version', cacheMiddleware(300), async (req, res, next) => {
   try {
     const { version } = req.params;
     const apiUrl = `https://bible-api.com/data/${version}/random`;
@@ -29,6 +50,7 @@ router.get('/suggestion/:version', async (req, res, next) => {
   } catch (error) { next(error); }
 });
 
+// --- ROTAS DE FAVORITOS (PROTEGIDAS) ---
 const favoriteValidation = celebrate({
   [Segments.BODY]: Joi.object().keys({
     reference: Joi.string().required(),
@@ -43,6 +65,8 @@ router.post('/favorites', protect, favoriteValidation, async (req, res, next) =>
     const existing = await FavoriteModel.findOne({ user_id, reference });
     if (existing) return res.status(200).json({ message: 'Já favoritado.', favorite: existing });
     await FavoriteModel.create({ user_id, reference, text, version });
+    // Log de Inserção (Postagem)
+    logger.info(`Usuário ID: ${user_id} favoritou o versículo: '${reference}'`);
     res.status(201).json({ message: 'Favoritado com sucesso.' });
   } catch (error) { next(error); }
 });
@@ -67,6 +91,7 @@ router.delete('/favorites', protect, deleteFavoriteValidation, async (req, res, 
   } catch (error) { next(error); }
 });
 
+// --- ROTA DE BUSCA E NAVEGAÇÃO ---
 const searchValidation = celebrate({
   [Segments.BODY]: Joi.object().keys({
     book: Joi.string().required(),
@@ -78,6 +103,9 @@ const searchValidation = celebrate({
 router.post('/verse/search', searchValidation, async (req, res, next) => {
   try {
     const { book, chapter, verse, version } = req.body;
+    // Log de Busca
+    logger.info(`Busca realizada para: Livro=${book}, Cap=${chapter}, Vers=${verse}`);
+    
     const apiUrl = `https://bible-api.com/${book.trim().replace(/\s+/g, '+')}+${chapter}:${verse}?translation=${version}`;
     const { ok, data: apiData } = await fetchAndParse(apiUrl);
     

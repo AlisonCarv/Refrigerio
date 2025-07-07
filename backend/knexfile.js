@@ -5,17 +5,19 @@ module.exports = {
     connection: {
       filename: './src/config/database.db'
     },
+    // Configuração explícita do Pool de Conexões
+    pool: {
+      min: 2,
+      max: 10,
+      afterCreate: (conn, done) => {
+        conn.run('PRAGMA foreign_keys = ON', done);
+      }
+    },
     migrations: {
       directory: './src/config/migrations'
     },
     seeds: {
       directory: './src/config/seeds'
-    },
-    // ADICIONAR: Configuração explícita do pool
-    pool: {
-      afterCreate: (conn, done) => {
-        conn.run('PRAGMA foreign_keys = ON', done); // Habilita chaves estrangeiras para SQLite
-      }
     },
     useNullAsDefault: true,
   },
